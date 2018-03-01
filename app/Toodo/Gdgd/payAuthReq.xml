@@ -1,0 +1,38 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:sp="http://sp.fsdp.zte.com.cn">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <sp:payAuthReq>
+            <sp:streamingNO>20170321144840134444</sp:streamingNO>
+            <sp:timeStamp>20170321144851</sp:timeStamp>
+            <sp:devType>1</sp:devType>
+            <sp:devNO>8002003224584594</sp:devNO>
+            <!--Optional:-->
+            <sp:catvID></sp:catvID>
+            <sp:spID>14</sp:spID>
+            <sp:serviceID>00000000Sp-C003</sp:serviceID>
+            <!--Optional:-->
+            <sp:payType>1</sp:payType>
+            <!--Optional:-->
+            <sp:fixedFee>100</sp:fixedFee>
+            <!--Optional:-->
+            <sp:redirectURL></sp:redirectURL>
+            <!--Optional:-->
+            <sp:noticeAction></sp:noticeAction>
+            <!--Optional:-->
+            <sp:payBack></sp:payBack>
+            <!--Optional:-->
+            <sp:CARegionCode>101</sp:CARegionCode>
+        </sp:payAuthReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+
+
+
+
+
+
+

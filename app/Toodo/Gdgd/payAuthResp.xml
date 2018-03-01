@@ -1,0 +1,16 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                   xmlns:sp="http://sp.fsdp.zte.com.cn">
+    <SOAP-ENV:Header>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <sp:payAuthResp>
+            <sp:streamingNO>20170321144840134444</sp:streamingNO>
+            <sp:servID>3602023113</sp:servID>
+            <sp:resultCode>0</sp:resultCode>
+            <sp:orderID>20170402172218100001356</sp:orderID>
+            <sp:needCnfm>2</sp:needCnfm>
+        </sp:payAuthResp>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ADI>
+    <Metadata>
+        <AMS Asset_Class="package" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+             Asset_ID="OTHE1520160509000081" Asset_Name="《快乐星球》第三部" Creation_Date="2016-05-12" Description=""
+             Provider="北京中录国际" Provider_ID="00026"/>
+        <App_Data App="MOD" Name="Metadata_Spec_Version" Value="CableLabsVOD1.1"/>
+        <App_Data App="MOD" Name="Classify" Value="电视剧"/>
+        <App_Data App="MOD" Name="Genre" Value="科幻,儿童,都市"/>
+        <App_Data App="MOD" Name="Keyword" Value="儿童/科幻"/>
+        <App_Data App="MOD" Name="Year" Value="2007"/>
+        <App_Data App="MOD" Name="Actors" Value="孙斯阳/张蕊"/>
+        <App_Data App="MOD" Name="Director" Value="张惠民"/>
+        <App_Data App="MOD" Name="Summary_Long"
+                  Value="黑暗星球首领发现008号机器人被快乐星球改造，更加仇视快乐星球，暗中策划对快乐星球发动致命攻击。与此同时，老顽童爷爷也在苦苦寻找新的能量源，力图阻止黑暗星球称霸宇宙的野心。周晓航是一个小学四年级的学生，他看了《快乐星球》以后，坚信快乐星球的存在，他决心找到这个美好的地方，为此常常受到同学们的嘲笑。快放暑假了，他和几个小同学组成了暑期爱心活动小组，他想在假期里完成找到快乐星球的心愿。一天，周晓航手里的一枚古币引起了老顽童和黑暗星球首领的注意，因为根据史料记载，古币背后隐藏着一个巨大的秘密，但这个秘密究竟是什么，谁也说不清楚。为了揭开古币之谜，老顽童爷爷派遣棒棒、首领派遣千面人来到地球，来到周晓航的身边。棒棒混入了晓航的活动小组，千面人也以不同的身份接近晓航，从此引发了一系列惊险、有趣的故事……"/>
+        <App_Data App="MOD" Name="Country_Of_Origin" Value="大陆"/>
+        <App_Data App="MOD" Name="Language" Value="国语"/>
+        <App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-06-15"/>
+        <App_Data App="MOD" Name="Licensing_Window_End" Value="2019-06-14"/>
+        <App_Data App="MOD" Name="TotalNumber" Value="50"/>
+        <App_Data App="MOD" Name="VodResourceType" Value="pc"/>
+    </Metadata>
+    <Asset>
+        <Metadata>
+            <AMS Asset_Class="title" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                 Asset_ID="北京中录9120160506000631" Asset_Name="《快乐星球》第三部01" Creation_Date="2016-05-12" Description=""
+                 Provider="北京中录国际" Provider_ID="00026"/>
+            <App_Data App="MOD" Name="Title" Value="《快乐星球》第三部01"/>
+            <App_Data App="MOD" Name="Title_Sec" Value="kuailexingqiudisanbu"/>
+            <App_Data App="MOD" Name="Title_Brief" Value=""/>
+            <App_Data App="MOD" Name="AssetType" Value="1"/>
+            <App_Data App="MOD" Name="Run_Time" Value="00:49:10"/>
+            <App_Data App="MOD" Name="Show_Type" Value="电视剧"/>
+            <App_Data App="MOD" Name="Genre" Value="科幻,儿童,都市"/>
+            <App_Data App="MOD" Name="Keyword" Value="儿童/科幻"/>
+            <App_Data App="MOD" Name="Season" Value="0"/>
+            <App_Data App="MOD" Name="TotalNumber" Value="50"/>
+            <App_Data App="MOD" Name="Chapter" Value="1"/>
+            <App_Data App="MOD" Name="Summary_Long"
+                      Value="黑暗星球首领发现008号机器人被快乐星球改造，更加仇视快乐星球，暗中策划对快乐星球发动致命攻击。与此同时，老顽童爷爷也在苦苦寻找新的能量源，力图阻止黑暗星球称霸宇宙的野心。周晓航是一个小学四年级的学生，他看了《快乐星球》以后，坚信快乐星球的存在，他决心找到这个美好的地方，为此常常受到同学们的嘲笑。快放暑假了，他和几个小同学组成了暑期爱心活动小组，他想在假期里完成找到快乐星球的心愿。一天，周晓航手里的一枚古币引起了老顽童和黑暗星球首领的注意，因为根据史料记载，古币背后隐藏着一个巨大的秘密，但这个秘密究竟是什么，谁也说不清楚。为了揭开古币之谜，老顽童爷爷派遣棒棒、首领派遣千面人来到地球，来到周晓航的身边。棒棒混入了晓航的活动小组，千面人也以不同的身份接近晓航，从此引发了一系列惊险、有趣的故事……"/>
+            <App_Data App="MOD" Name="Summary_Long_Sec" Value=""/>
+            <App_Data App="MOD" Name="Language" Value="国语"/>
+            <App_Data App="MOD" Name="Subtitle_Language" Value=""/>
+            <App_Data App="MOD" Name="Director" Value="张惠民"/>
+            <App_Data App="MOD" Name="Director_Sec" Value=""/>
+            <App_Data App="MOD" Name="Actors" Value="孙斯阳/张蕊"/>
+            <App_Data App="MOD" Name="Actors_Sec" Value=""/>
+            <App_Data App="MOD" Name="Writers" Value=""/>
+            <App_Data App="MOD" Name="Writers_Sec" Value=""/>
+            <App_Data App="MOD" Name="Provider" Value="北京中录国际"/>
+            <App_Data App="MOD" Name="Provider_Sec" Value=""/>
+            <App_Data App="MOD" Name="Play_Date" Value=""/>
+            <App_Data App="MOD" Name="Premiere_Date" Value=""/>
+            <App_Data App="MOD" Name="Year" Value="2007"/>
+            <App_Data App="MOD" Name="Country_Of_Origin" Value="大陆"/>
+            <App_Data App="MOD" Name="Country_Of_Origin_Sec" Value=""/>
+            <App_Data App="MOD" Name="Column"/>
+            <App_Data App="MOD" Name="Audience" Value=""/>
+            <App_Data App="MOD" Name="Classify" Value="电视剧"/>
+            <App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-06-15"/>
+            <App_Data App="MOD" Name="Licensing_Window_End" Value="2019-06-14"/>
+            <App_Data App="MOD" Name="Rate" Value=""/>
+            <App_Data App="MOD" Name="Suggested_Price" Value=""/>
+            <App_Data App="MOD" Name="HighLight" Value=""/>
+            <App_Data App="MOD" Name="Awards" Value=""/>
+            <App_Data App="MOD" Name="Screen_Writer" Value=""/>
+        </Metadata>
+        <Asset>
+            <Metadata>
+                <AMS Asset_Class="movie" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                     Asset_ID="北京中录9120160506000631H264_TS6043904" Asset_Name="《快乐星球》第三部01" Creation_Date="2016-05-12"
+                     Description="" Provider="北京中录国际" Provider_ID="00026"/>
+                <App_Data App="MOD" Name="Bit_Rate" Value="6043904"/>
+                <App_Data App="MOD" Name="Content_FileSize" Value="2147483647"/>
+                <App_Data App="MOD" Name="Run_Time" Value="00:49:10"/>
+                <App_Data App="MOD" Name="FileFormat" Value="H264_TS"/>
+                <App_Data App="MOD" Name="CodeFormat" Value=""/>
+                <App_Data App="MOD" Name="Format" Value="标清"/>
+                <App_Data App="MOD" Name="HD_Format" Value=""/>
+                <App_Data App="MOD" Name="SD_Format" Value=""/>
+                <App_Data App="MOD" Name="Strean_Size" Value=""/>
+                <App_Data App="MOD" Name="Asset_Tag" Value="STB"/>
+                <App_Data App="MOD" Name="Asset_Profile" Value="STD"/>
+            </Metadata>
+            <Content Value="《kuailexingqiu》disanbu01.ts"/>
+        </Asset>
+        <Asset>
+            <Metadata>
+                <AMS Asset_Class="poster" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                     Asset_ID="PO北京中录91201605060006310" Asset_Name="《快乐星球》第三部01" Creation_Date="2016-05-12"
+                     Description="" Provider="北京中录国际" Provider_ID="00026"/>
+                <App_Data App="MOD" Name="Ui_Style" Value="0"/>
+                <App_Data App="MOD" Name="Title" Value="《快乐星球》第三部01 横图海报"/>
+                <App_Data App="MOD" Name="Summary" Value=""/>
+            </Metadata>
+            <Content Value="\《kuailexingqiu》disanbu01_600x420.jpg"/>
+        </Asset>
+        <Asset>
+            <Metadata>
+                <AMS Asset_Class="poster" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                     Asset_ID="PO北京中录91201605060006311" Asset_Name="《快乐星球》第三部01" Creation_Date="2016-05-12"
+                     Description="" Provider="北京中录国际" Provider_ID="00026"/>
+                <App_Data App="MOD" Name="Ui_Style" Value="1"/>
+                <App_Data App="MOD" Name="Title" Value="《快乐星球》第三部01 竖图海报"/>
+                <App_Data App="MOD" Name="Summary" Value=""/>
+            </Metadata>
+            <Content Value="\《kuailexingqiu》disanbu01_400x600.jpg"/>
+        </Asset>
+    </Asset>
+</ADI>

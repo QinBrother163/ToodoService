@@ -1,0 +1,17 @@
+1 视频文件的要求：
+	码率： 2M-2.3M
+	编码格式：264编码
+	文件格式：.ts
+	视频中不能有二维码，公司的log（只能有河南有线的），不要有广告。
+
+ 
+2 ADI文件说明：
+	示例：<AMS Provider="SHUANGDONG" Product="OTT" Asset_Name="wu舞曲1" Version_Major="10" Version_Minor="0" Description="asset package" Creation_Date="2017-08-20" Provider_ID="12358071" Asset_ID="?" Asset_Class="package"/>  
+	要修改部分：1  Asset_Name="wu舞曲1"    舞曲的名称（歌曲名称如：小苹果） 
+		    2  Asset_ID="?" 	文件名（英文）
+		    
+
+	示例 <App_Data App="MOD" Name="Content_FileSize" Value=""/>
+	修改： Value是文件的大小
+	
+	<Content Value="/video.ts"/> 路径不修改。

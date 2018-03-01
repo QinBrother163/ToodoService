@@ -1,0 +1,33 @@
+﻿保存道具购买记录
+* 表结构信息参考 CREATE TABLE `recharge`
+* 记录保存每个月生成一张表
+	如：1月的表：recharge_201701
+	    2月的表：recharge_201702
+	    3月的表：recharge_201703
+* 没有的列信息可以为空NULL
+
+参考sql
+
+-- ----------------------------
+-- 结构 recharge
+-- ----------------------------
+DROP TABLE IF EXISTS `recharge`;
+CREATE TABLE `recharge` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `area` int(11) DEFAULT NULL COMMENT '地区编号',
+  `product` varchar(255) DEFAULT NULL COMMENT '项目编号/项目名称',
+  `userid` varchar(255) DEFAULT NULL COMMENT '帐号ID',
+  `goodsname` varchar(255) DEFAULT NULL COMMENT '道具名称',
+  `pay_code` varchar(255) DEFAULT NULL COMMENT '支付流水号',
+  `fb_money` int(11) DEFAULT NULL COMMENT ' 充值元宝数',
+  `rmb` int(11) DEFAULT '0' COMMENT '充值金额',
+  `time` datetime DEFAULT NULL COMMENT '充值时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=559 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- 例子
+-- ----------------------------
+INSERT INTO `recharge` VALUES ('1', '10000', '植物僵尸', '1234567890123456', '两个太阳', '12345678901234561970-01-01083336', '200', '2', '2016-08-06 07:49:46');
+INSERT INTO `recharge` VALUES ('2', '10000', '植物僵尸', '1234567890123456', '两个月亮', '12345678901234561970-01-01083336', '200', '2', '2016-08-06 07:49:51');
+INSERT INTO `recharge` VALUES ('3', '10000', '植物僵尸', '1234567890123456', '解锁僵尸敌', '12345678901234561970-01-01083336', '200', '2', '2016-08-06 07:51:31');

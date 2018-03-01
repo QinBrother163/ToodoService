@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, initial-scale=1, user-scalable=no">
+    <meta name="page-view-size" content="1280*720">
+    <title>双动科技-testJs</title>
+    <style>
+        body {
+            width: 1280px;
+            height: 720px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #biz0 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1280px;
+            height: 720px;
+            background: #7fffd4;
+        }
+
+        #biz1 {
+            position: absolute;
+            left: 320px;
+            top: 180px;
+            width: 640px;
+            height: 360px;
+            background: #f8d627;
+
+            color: #00A000;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div id="biz0">
+    <div id="biz1">
+        <!-- html路径要加后面反斜杠，表示是基本路径，其它相对路径相对于它 -->
+        <a href="http://feiben.toodo.com.cn/tdance/">体感热舞</a>
+        <a href="testJs1.html">错误页面</a>
+
+        <h6 id="biz2">2</h6>
+        <h6 id="biz3">3</h6>
+        <h6 id="biz4">4</h6>
+        <h6 id="biz5">5</h6>
+    </div>
+
+</div>
+<script>
+    window.onload = function(){
+        var javaApi = window.javaApi;
+
+        var biz2 = document.getElementById('biz2');
+        biz2.innerHTML = javaApi.test1();
+
+        var biz3 = document.getElementById('biz3');
+        biz3.innerHTML = javaApi.test2();
+    };
+
+</script>
+</body>
+</html>

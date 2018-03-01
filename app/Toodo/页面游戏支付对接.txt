@@ -1,0 +1,51 @@
+﻿1.
+页面游戏调用接口
+gameUrl?gameid=xxx&returnURL=xxx&rechageURL=xx&key=xx&dev=xx&fatherkey=xxx&userId=xxx
+
+gameid=xxx
+returnURL=xxx
+rechageURL=xxx
+key=xxx
+dev=xxx
+fatherkey=xxx
+userId=xxx
+
+java游戏调用接口
+html object
+<object>
+  <param name="gameid" value="xxx" />	
+  <param name="returnURL" value="xxx" />
+  <param name="rechageURL" value="xxx" />
+  <param name="key" value="xxx" />
+  <param name="dev" value="xxx" />		
+  <param name="fatherkey" value="xxx" />		
+  <param name="userId" value="xxx" />
+  <param name="serverURL" value="xxx" />
+</object>
+
+
+2.
+rechageURL=xxx
+
+a) http GET rechageURL
+{
+"userId": xxx,      //！调用接口传入，userId=100860000xxxx
+"rmb": 5,           //! [1,5]之间的整数
+"cpCode": xxx,      //! 255
+"key": xxx,         //! 调用接口传入，key=100860000yyyy
+"gameid": xxx,      //! 调用接口传入，key=10xx
+"goodsId": xxx,     //! 007
+"goodsName": xxx,   //! 跟女神约会一次
+}
+
+b) return
+{
+"returnFlag":xx,
+"note":xx,
+"rmb":xx,
+"userId":xx,
+"sid":xx
+}
+
+
+http://172.16.147.107:1618/HTTPServerForJava/payMoney.do?payUrl=http://172.16.147.103/dbservice/t3.php&UserID=youtongsuo&key=1&Money=5&gameid=100018&goodsId=15&goodsName=|106||105||97||110||115||104||101||110||103|

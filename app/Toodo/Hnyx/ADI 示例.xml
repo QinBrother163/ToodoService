@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ADI>
+    <Metadata>
+        <AMS Provider="SHUANGDONG" Product="OTT" Asset_Name="wu舞曲1" Version_Major="10" Version_Minor="0"
+             Description="asset package" Creation_Date="2017-08-20" Provider_ID="12358071" Asset_ID="?"
+             Asset_Class="package"/>
+        <App_Data App="MOD" Name="Provider_Content_Tier" Value="FILM"/>
+        <App_Data App="MOD" Name="Metadata_Spec_Version" Value="AVITMOD1.1"/>
+    </Metadata>
+    <Asset>
+        <Metadata>
+            <AMS Provider="SOHU" Product="OTT" Asset_Name="舞曲1" Version_Major="1" Version_Minor="0"
+                 Description="title metadata" Creation_Date="2017-08-20 11:52:00" Provider_ID="12358071" Asset_ID="？"
+                 Asset_Class="title"/>
+            <App_Data App="MOD" Name="Title_Sort_Name" Value="舞曲1"/>
+            <App_Data App="MOD" Name="Title_Brief" Value="舞曲1"/>
+            <App_Data App="MOD" Name="Title" Value="舞曲1"/>
+            <App_Data App="MOD" Name="Type" Value="title"/>
+            <App_Data App="MOD" Name="ISAN" Value=""/>
+            <App_Data App="MOD" Name="Episode_Name" Value=""/>
+            <App_Data App="MOD" Name="Episode_ID" Value=""/>
+            <App_Data App="MOD" Name="Summary_Long" Value=""/>
+            <App_Data App="MOD" Name="Summary_Medium" Value=""/>
+            <App_Data App="MOD" Name="Summary_Short" Value=""/>
+            <App_Data App="MOD" Name="Rating" Value=""/>
+            <App_Data App="MOD" Name="Run_Time" Value="00:04:28"/>
+            <App_Data App="MOD" Name="Display_Run_Time" Value="00:04"/>
+            <App_Data App="MOD" Name="Year" Value="2017"/>
+            <App_Data App="MOD" Name="Country_of_Origin" Value="CH"/>
+            <App_Data App="MOD" Name="from_API" Value="0"/>
+            <App_Data App="MOD" Name="Actors" Value=""/>
+            <App_Data App="MOD" Name="Actors_Display" Value=""/>
+            <App_Data App="MOD" Name="Writer_Display" Value=""/>
+            <App_Data App="MOD" Name="Director" Value=""/>
+            <App_Data App="MOD" Name="Producer" Value=""/>
+            <App_Data App="MOD" Name="Studio" Value=""/>
+            <App_Data App="MOD" Name="Category" Value=""/>
+            <App_Data App="MOD" Name="Genre" Value=""/>
+            <App_Data App="MOD" Name="Show_Type" Value="Game"/>
+            <App_Data App="MOD" Name="Season_Premiere" Value="N"/>
+            <App_Data App="MOD" Name="Season_Finale" Value="N"/>
+            <App_Data App="MOD" Name="Licensing_Window_Start" Value="2002-02-01 00:00:00"/>
+            <App_Data App="MOD" Name="Licensing_Window_End" Value="2022-03-31 23:59:59"/>
+            <App_Data App="MOD" Name="Preview_Period" Value=""/>
+            <App_Data App="MOD" Name="Suggested_Price" Value=""/>
+            <App_Data App="MOD" Name="Studio_Name" Value="Shuangdong"/>
+            <App_Data App="MOD" Name="Studio_Code" Value="SD"/>
+            <App_Data App="MOD" Name="Subscriber_View_Limit" Value="2002-02-01,2002-02-28,5"/>
+            <App_Data App="MOD" Name="Subscriber_View_Limit" Value="2022-03-01,2002-03-31,5"/>
+        </Metadata>
+        <Asset>
+            <Metadata>
+                <AMS Provider="SHUANGDONG" Product="OTT" Asset_Name="舞曲2" Version_Major="1" Version_Minor="0"
+                     Description="movie" Creation_Date="2017-08-20" Provider_ID="12358071" Asset_ID="123"
+                     Asset_Class="movie" Bit_Rate=""/>
+                <App_Data App="MOD" Name="Encryption" Value="N"/>
+                <App_Data App="MOD" Name="Type" Value="movie"/>
+                <App_Data App="MOD" Name="Service" Value="OTT"/>
+                <App_Data App="MOD" Name="Audio_Type" Value="Dolby Digital"/>
+                <App_Data App="MOD" Name="Screen_Format" Value="HD"/>
+                <App_Data App="MOD" Name="Languages" Value="zh"/>
+                <App_Data App="MOD" Name="Subtitle_Languages" Value="zh"/>
+                <App_Data App="MOD" Name="Dubbed_Languages" Value="zh"/>
+                <App_Data App="MOD" Name="Copy_Protection" Value="N"/>
+                <App_Data App="MOD" Name="Content_FileSize" Value=""/>
+                <App_Data App="MOD" Name="Content_CheckSum" Value=""/>
+            </Metadata>
+            <Content Value="/video.ts"/>
+        </Asset>
+    </Asset>
+</ADI>

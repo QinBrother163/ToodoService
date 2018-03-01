@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ADI>
+    <Metadata>
+        <AMS Asset_Class="package" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+             Asset_ID="1ee8161cf55f4822925d4558fbd72a60" Asset_Name="xxx" Creation_Date="2016-11-16" Description=""
+             Provider="北京中录国际" Provider_ID="00026"/>
+        <App_Data App="MOD" Name="Metadata_Spec_Version" Value="CableLabsVOD1.1"/>
+        <App_Data App="MOD" Name="Classify" Value="电视剧"/>
+        <App_Data App="MOD" Name="Genre" Value="动作/探险"/>
+        <App_Data App="MOD" Name="Keyword" Value="科幻"/>
+        <App_Data App="MOD" Name="Year" Value="2012"/>
+        <App_Data App="MOD" Name="Actors" Value="特雷弗（布兰登•弗莱瑟饰）肖恩（乔什•哈切森饰）"/>
+        <App_Data App="MOD" Name="Director" Value="罗艾瑞克•布莱威格"/>
+        <App_Data App="MOD" Name="Summary_Long" Value="一次偶然，在一本古籍里发现了一张古老的羊皮纸，为了寻个究竟，他们毅然决定依照记载，前往冰岛探险！"/>
+        <App_Data App="MOD" Name="Country_Of_Origin" Value="美国"/>
+        <App_Data App="MOD" Name="Language" Value="英语"/>
+        <App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-06-15"/>
+        <App_Data App="MOD" Name="Licensing_Window_End" Value="2019-06-14"/>
+        <App_Data App="MOD" Name="TotalNumber" Value="50"/>
+        <App_Data App="MOD" Name="VodResourceType" Value="pc"/>
+    </Metadata>
+    <Asset>
+        <Metadata>
+            <AMS Asset_Class="title" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                 Asset_ID="1ee8161cf55f4822925d4558fbd72a60" Asset_Name="xxx" Creation_Date="2016-11-16" Description=""
+                 Provider="北京中录国际" Provider_ID="00026"/>
+            <App_Data App="MOD" Name="Title" Value="xxx01TEST1130-1"/>
+            <App_Data App="MOD" Name="Title_Sec" Value="Journey to the Center of the Earth"/>
+            <App_Data App="MOD" Name="Title_Brief" Value="xxx"/>
+            <App_Data App="MOD" Name="AssetType" Value="1"/>
+            <App_Data App="MOD" Name="Run_Time" Value="00:00:00"/>
+            <App_Data App="MOD" Name="Show_Type" Value="电视剧"/>
+            <App_Data App="MOD" Name="Genre" Value="科幻"/>
+            <App_Data App="MOD" Name="Keyword" Value="科幻"/>
+            <App_Data App="MOD" Name="Season" Value="0"/>
+            <App_Data App="MOD" Name="TotalNumber" Value="50"/>
+            <App_Data App="MOD" Name="Chapter" Value="1"/>
+            <App_Data App="MOD" Name="Summary_Long" Value="一次偶然，在一本古籍里发现了一张古老的羊皮纸，为了寻个究竟，他们毅然决定依照记载，前往冰岛探险！"/>
+            <App_Data App="MOD" Name="Summary_Long_Sec" Value="Summary_Long_Sec"/>
+            <App_Data App="MOD" Name="Language" Value="英语"/>
+            <App_Data App="MOD" Name="Subtitle_Language" Value="Subtitle_Language"/>
+            <App_Data App="MOD" Name="Director" Value="罗艾瑞克•布莱威格"/>
+            <App_Data App="MOD" Name="Director_Sec" Value="dirctor_sec"/>
+            <App_Data App="MOD" Name="Actors" Value="特雷弗（布兰登•弗莱瑟饰）肖恩（乔什•哈切森饰）"/>
+            <App_Data App="MOD" Name="Actors_Sec" Value="Actors_Sec"/>
+            <App_Data App="MOD" Name="Writers" Value="Writers"/>
+            <App_Data App="MOD" Name="Writers_Sec" Value="Writers_Sec"/>
+            <App_Data App="MOD" Name="Provider" Value="嘟嘟韩剧"/>
+            <App_Data App="MOD" Name="Provider_Sec" Value="Provider_Sec"/>
+            <App_Data App="MOD" Name="Play_Date" Value="Play_Date"/>
+            <App_Data App="MOD" Name="Premiere_Date" Value="Premiere_Date"/>
+            <App_Data App="MOD" Name="Year" Value="2007"/>
+            <App_Data App="MOD" Name="Country_Of_Origin" Value="美国"/>
+            <App_Data App="MOD" Name="Country_Of_Origin_Sec" Value=""/>
+            <App_Data App="MOD" Name="Column"/>
+            <App_Data App="MOD" Name="Audience" Value="Audience"/>
+            <App_Data App="MOD" Name="Classify" Value="电视剧"/>
+            <App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-06-15"/>
+            <App_Data App="MOD" Name="Licensing_Window_End" Value="2019-06-14"/>
+            <App_Data App="MOD" Name="Rate" Value="Rate"/>
+            <App_Data App="MOD" Name="Suggested_Price" Value="Suggested_Price"/>
+            <App_Data App="MOD" Name="HighLight" Value="HighLight"/>
+            <App_Data App="MOD" Name="Awards" Value="Awards"/>
+            <App_Data App="MOD" Name="Screen_Writer" Value="Screen_Writer"/>
+        </Metadata>
+
+        <Asset>
+            <Metadata>
+                <AMS Asset_Class="movie" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                     Asset_ID="c8075f83103349cdad98ed41769e5d6d" Asset_Name="xxx01TEST1130-1" Creation_Date="2016-11-16"
+                     Description="" Provider="北京中录国际" Provider_ID="00026"/>
+                <App_Data App="MOD" Name="Bit_Rate" Value="112058"/>
+                <App_Data App="MOD" Name="Content_FileSize" Value="57150004"/>
+                <App_Data App="MOD" Name="Run_Time" Value="0.068"/>
+                <App_Data App="MOD" Name="FileFormat" Value="MPEG-4"/>
+                <App_Data App="MOD" Name="CodeFormat" Value="MPEG-4"/>
+                <App_Data App="MOD" Name="Format" Value="高清"/>
+                <App_Data App="MOD" Name="HD_Format" Value="1080p"/>
+                <App_Data App="MOD" Name="SD_Format" Value="SD_Format"/>
+                <App_Data App="MOD" Name="Strean_Size" Value="Strean_Size"/>
+                <App_Data App="MOD" Name="Asset_Tag" Value="STB"/>
+                <App_Data App="MOD" Name="Asset_Profile" Value="HD"/>
+            </Metadata>
+            <Content Value="xxx01.mov"/>
+        </Asset>
+        <Asset>
+            <Metadata>
+                <AMS Asset_Class="poster" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                     Asset_ID="c69db1fc57d540bea1dc389234357df0" Asset_Name="xxx01TEST1130-1" Creation_Date="2016-11-16"
+                     Description="" Provider="北京中录国际" Provider_ID="00026"/>
+                <App_Data App="MOD" Name="Ui_Style" Value="0"/>
+                <App_Data App="MOD" Name="Title" Value="xxx01TEST1130-1横图海报"/>
+                <App_Data App="MOD" Name="Summary" Value=""/>
+            </Metadata>
+            <Content Value="\xxx01_600x420.png"/>
+        </Asset>
+        <Asset>
+            <Metadata>
+                <AMS Asset_Class="poster" Product="VOD" Version_Major="1" Version_Minor="0" Verb=""
+                     Asset_ID="c8e8b3f8e18642a0801b145ec3c05d6c" Asset_Name="xxx01TEST1130-1竖图海报"
+                     Creation_Date="2016-11-16" Description="" Provider="北京中录国际" Provider_ID="00026"/>
+                <App_Data App="MOD" Name="Ui_Style" Value="1"/>
+                <App_Data App="MOD" Name="Title" Value="xxx_1"/>
+                <App_Data App="MOD" Name="Summary" Value=""/>
+            </Metadata>
+            <Content Value="\xxx01_400x600.png"/>
+        </Asset>
+    </Asset>
+</ADI>

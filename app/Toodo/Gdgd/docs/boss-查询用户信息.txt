@@ -1,0 +1,90 @@
+modify: 李健威
+date: 2017-04-06
+更新查询用户信息接口 UAP_queryUserInfo
+base103/boss/socket/service.php               ?测试用的补全信息
+base104/boss/personmessage.php                重点改这个文件
+base104/boss/a.php                            ?不知干嘛
+base104/boss/abc.php                          ?不知干嘛
+ * send_socket
+   增加字段clientpwd   <clientpwd>xxx</clientpwd>
+   增加字段permark     <permark>1</permark>
+
+# 新版
+测试地址 10.205.22.240:39999
+请求样例：
+http://127.0.0.1:8000/api/boss/queryUserInfo?
+devno=8769002447248220&type=1&branchNO=DG&permark=1
+返回样例：
+          {
+          "status": "0000",
+          "message": "正常调用",
+          "msgSerialNo": "201704121010207501491963020751",
+          "output": {
+          "custid": "12085",
+          "userName": "宣观汉",
+          "phoneNumber": "13712788121/15744444444",
+          "addr": "广东省东莞市莞城区1区1区红荔路富雅花园D座408号#",
+          "branchno": "DG",
+          "areaid": "204",
+          "custtype": "0",
+          "CATVId": "15744444444",
+          "type": "1",
+          "gdnoid": "259",
+          "CATVPassWord": "E10ADC3949BA59ABBE56E057F20F883E",
+          "isActive": "Y",
+          "servid": "763028",
+          "devno": "8769002447248220",
+          "servstatus": "2",
+          "isbindbank": "Y",
+          "isinarr": "N",
+          "userpayType": "3",
+          "DevNettype": "1",
+          "isBasearr": "N"
+          }
+         }
+
+
+# 旧版
+商用地址 10.205.29.139:36802  商用旧
+测试地址 10.205.22.200:9987   测试旧  不通了 x
+请求样例：
+http://127.0.0.1:8000/api/boss/queryUserInfo?
+devno=8769002447248220&type=1&branchNO=DG
+返回样例：
+         {
+          "status": "0000",
+          "message": "成功",
+          "output": {
+          "servid": "763028",
+          "userName": "宣观汉",
+          "phoneNumber": "13712788121,15744444444",
+          "devno": "8769002447248220",
+          "CATVId": [],
+          "type": "3",
+          "areaid": "204",
+          "branchno": "DG",
+          "custid": "12085",
+          "gdnoid": [],
+          "isActive": "0",
+          "servstatus": "2",
+          "stoplock": [],
+          "CATVPassWord": [],
+          "userpayType": "3",
+          "isbindbank": "Y",
+          "custtype": "0",
+          "addr": [],
+          "isinarr": "N",
+          "DevNettype": "1",
+          "isBasearr": "N"
+          }
+         }
+
+
+
+
+-e request:   00000247
+<request><clientid>DDX01</clientid><clientpwd>dJoDOvZQgnfmOu9jT0IXKn2c8iB2Chn7</clientpwd><service>UAP_queryUserInfo</service><input><devno>8769002447248220</devno><type>1</type><branchNO>DG</branchNO><permark>1</permark></input></request>
+        
+-e response:   <?xml version="1.0"?>
+<response><status>0000</status><message>&#x6B63;&#x5E38;&#x8C03;&#x7528;</message><msgSerialNo>201704191046024951492569962495</msgSerialNo><output><custid>12085</custid><userName>&#x5BA3;&#x89C2;&#x6C49;</userName><phoneNumber>13712788121</phoneNumber><branchno>DG</branchno><areaid>204</areaid><custtype>0</custtype><type>1</type><isActive>N</isActive><servid>763028</servid><devno>8769002447248220</devno><servstatus>2</servstatus><isbindbank>Y</isbindbank><isinarr>N</isinarr><userpayType>3</userpayType><DevNettype>1</DevNettype><isBasearr>N</isBasearr></output></response>
+time:1492570211

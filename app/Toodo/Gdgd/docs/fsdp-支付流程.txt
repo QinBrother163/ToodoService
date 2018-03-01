@@ -1,0 +1,122 @@
+* 二级业务接口 orderRelationLv2 跟 payAuth 有什么区别
+   orderRelationLv2是二级包月订购类，payAuth是点播；
+* 充值类消费需要童锁验证、在线支付调用吗？
+   都需要
+* 后付费的商品是不是不需要http跳转的童锁验证、在线支付
+   需不需要童锁和在线支付，通过needCnfm判断
+   开启了童锁，后付费也是需要跳转童锁验证。在线支付不是后付费
+* 充值消费流程
+订购包月
+   0.queryUserInfo
+   1.orderRelationLv2
+   2.orderRelationAffirm
+   3.童锁验证
+   4.在线支付
+单点消费
+   0.queryUserInfo
+   1.payAuth 
+   2.童锁验证
+   3.在线支付
+
+count大于0，sums大于0，调用在线支付
+
+# queryUserInfo
+{
+streamingNO
+timeStamp
+devNO
+CARegionCode
+}
+resultInfo
+{
+ streamingNO
+ resultCode
+ custid          客户标识
+ servID          用户标识
+ servstatus      [0,6] 2已开通为正常使用状态。其他状态均不可用
+ stoplock        停机原因
+ userName        客户名称
+ devNO           智能卡号
+ catvID          广电号
+ areaid          业务区
+ branchno        地市代码
+ custtype        客户类型 只有0才能使用增值业务
+ isinarr         用户是否欠费：Y 是  N 否
+ resultDesc      查询失败原因
+}
+
+# payAuth
+{
+streamingNO      流水号 格式：时间戳（YYYYMMDDHHMMSS）＋6位序号
+timeStamp        时间戳 格式：（YYYYMMDDHHMMSS），小时采用24小时制
+devType          设备类型
+devNO            设备编号：智能卡、机顶盒的逻辑号码，其他设备序列号，无卡家庭智能网关NUID
+catvID           11位数字广电号（逻辑卡号）
+spID             SP编号，唯一标识SP的编码
+serviceID        二级业务商品编码
+payType          SP指定付费方式专用：0：后付费 1：直接付费
+fixedFee         SP指定付费方式专用，Paytype=1直接付费时：付费金额，单位分，不带小数点
+redirectURL      支付成功后返回页面地址；
+noticeAction     支付成功后后台通知接口地址；
+payBack          SP侧商品名称，用于清单查询比如：九成游戏，植物大战僵尸，道具1元
+CARegionCode     机顶盒CA对象的regionCode（地区编码）
+}
+{
+streamingNO      流水号
+servID
+resultCode       0 成功 非0 失败
+resultDesc       失败详细原因
+orderID          订单号
+needCnfm         童锁和在线支付标识：（默认为0）0：无需童锁 1：需要童锁 2：需要在线支付
+}
+
+童锁验证
+ 请求地址 http://172.16.145.197:8080/sdpportal/childLockAction_childlock.action
+ 测试地址 http://10.207.151.23:8080/sdpportal/childLockAction_childlock.action
+==》
+orderid	        String	50	订单号：最终确认（订单确认接口）需要
+customID	    String	30	客户编号（1个客户多个智能卡或多个设备）-2015/12/14 新增：可选
+spid	        String	10	Sp编号，唯一标识SP的编号
+devType	        String	3	订购参数：设备类型： 见附录3.2.2
+devNo	        String	20	订购参数：设备编号：智能卡、机顶盒的逻辑号码，其他硬件设备的序列号。
+CARegionCode    String	50	机顶盒CA对象的regionCode（地区编码）FSDP对应将其转换成地市编码
+serviceid	    String	40	订购参数：业务产品编码
+returl	        String	512	登录后，页面转向的地址;返回数据
+retData	        String	512	业务调用参数，调用后保证原样返回。可以为空（加密）等等；
+
+《==
+orderid	        String	50	订单号：最终确认（订单确认接口）需要
+customID	    String	30	客户编号（1个客户多个智能卡或多个设备）
+spid	        String	10	Sp编号，唯一标识SP的编号
+devType	        String	3	设备类型： 见附录3.2.2
+devNo	        String	20	设备编号：智能卡、机顶盒的逻辑号码，其他硬件设备的序列号。智能卡号
+serviceid	    String	40	订购参数：一级业务产品编码
+resultCode	    Int	3	0   验证成功 非0 验证失败
+retData	        String	512	业务调用参数，调用后保证原样返回。可以为空（加密）等等；
+
+
+在线支付
+ 请求地址 http://172.16.145.197:8080/sdpportal/feePayAction_feePay.action
+ 测试地址 http://10.207.151.23:8080/sdpportal/feePayAction_feePay.action
+==》
+orderid	String	50	订单号：最终确认（订单确认接口）需要
+customID	String	30	客户编号（1个客户多个智能卡或多个设备）-2015/12/14 新增：可选
+spid	String	10	Sp编号，唯一标识SP的编号
+devType	String	3	订购参数：设备类型： 见附录3.2.2
+devNo	String	20	订购参数：设备编号：智能卡、机顶盒的逻辑号码，其他硬件设备的序列号。智能卡号（2016-08-30:特别说明：接口规范中devNo字段对于无卡家庭智能网关取值为NUID，对于无卡家庭智能网关NUID作用于机顶盒智能卡号一样，以下接口使用方式与此相同保持一致）
+CARegionCode	String	50	机顶盒CA对象的regionCode（地区编码）FSDP对应将其转换成地市编码
+serviceid	String	40	订购参数：业务产品编码
+ServiceName	String	256	计费商品名称
+Fee	String	128	计费总金额，单位为分，整数
+returl	String	512	登录后，页面转向的地址;返回数据
+retData	String	512	业务调用参数，调用后保证原样返回。可以为空（加密）等等；
+
+《==
+orderid	String	50	订单号：最终确认（订单确认接口）需要
+customID	String	30	客户编号（1个客户多个智能卡或多个设备）-2015/12/14 新增：可选
+spid	String	10	Sp编号，唯一标识SP的编号
+devType	String	3	订购参数：设备类型： 见附录3.2.2
+devNo	String	20	订购参数：设备编号：智能卡、机顶盒的逻辑号码，其他硬件设备的序列号。智能卡号（2016-08-30:特别说明：接口规范中devNo字段对于无卡家庭智能网关取值为NUID，对于无卡家庭智能网关NUID作用于机顶盒智能卡号一样，以下接口使用方式与此相同保持一致）
+serviceid	String	50	订购参数：一级业务产品编码
+resultCode	Int	3	0   验证成功 非0 验证失败
+retData	String	512	业务调用参数，调用后保证原样返回。可以为空（加密）等等；

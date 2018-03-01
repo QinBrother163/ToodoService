@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="PayByQrCodeImpService" targetNamespace="http://takeAlipayQrcode.outwardtps.out.roma.huge.com/" xmlns:ns1="http://boss.outwardtps.roma.huge.com/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://takeAlipayQrcode.outwardtps.out.roma.huge.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:import location="http://172.30.40.70:8181/roma.out/cxf/payByQrCode?wsdl=PayByQrCodeSync.wsdl" namespace="http://boss.outwardtps.roma.huge.com/">
+    </wsdl:import>
+  <wsdl:binding name="PayByQrCodeImpServiceSoapBinding" type="ns1:PayByQrCodeSync">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="payByQrCodeSync">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="payByQrCodeSync">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="payByQrCodeSyncResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PayByQrCodeImpService">
+    <wsdl:port binding="tns:PayByQrCodeImpServiceSoapBinding" name="PayByQrCodeSyncPort">
+      <soap:address location="http://172.30.40.70:8181/roma.out/cxf/payByQrCode"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

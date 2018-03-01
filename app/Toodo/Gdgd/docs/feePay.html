@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="/sdpportal/uiloader/js/jquery-1.4.4.min.js"></script>
+    <title>result.jsp</title>
+    <script type="text/javascript">
+        $(function(){
+            backToSP();
+        });
+        function backToSP()
+        {
+            var returl = '';
+            var h_orderid = '';
+            var h_customID = '';
+            var h_spid = '';
+            var h_devType = '';
+            var h_devNo = '';
+            var h_serviceid = '';
+            var h_retData = '';
+            var h_resultCode = '70001';
+            //console.log("returl="+returl+",h_orderid="+h_orderid+",h_customID="+h_customID+",h_spid="+h_spid+",h_devType="+h_devType+",h_devNo="+h_devNo+",h_serviceid="+h_serviceid+",h_retData="+h_retData+",h_resultCode="+h_resultCode);
+            $("#backsp").attr("action", returl);
+            $("#h_orderid").val(h_orderid);
+            $("#h_customID").val(h_customID);
+            $("#h_spid").val(h_spid);
+            $("#h_devType").val(h_devType);
+            $("#h_devNo").val(h_devNo);
+            $("#h_serviceid").val(h_serviceid);
+            $("#h_retData").val(h_retData);
+            $("#h_resultCode").val(h_resultCode);
+            //console.log("seesion: returl="+returl+",h_orderid="+h_orderid+",h_customID="+ h_customID+"h_spid="+h_spid+",h_devType="+h_devType+",h_devNo="+h_devNo+",h_serviceid="+h_serviceid+"h_retData="+h_retData+",h_resultCode="+h_resultCode);
+            $("#backsp").submit();
+        }
+    </script>
+</head>
+<body>
+<img src="images/blue_back.jpg" style="width: 100%;height: 100%; position: absolute;top: 0px;left:0px;right: 0px;bottom: 0px; z-index: -1"/>
+<form action="" name="backsp" method="post" id="backsp">
+    <input type="hidden" name="orderid" value="" id="h_orderid"/>
+    <!-- 订单号：最终确认（订单确认接口）需要,订单号：如果是FSDP管理业务，FSDP生产的订单号，最长50位的字符串；如果是外部系统，则外部系统随机唯一号，返回参数中将原样返回，保证调用／返回的同步； -->
+    <input type="hidden" name="customID" value="" id="h_customID"/>
+    <!-- 客户编号（1个客户多个智能卡或多个设备）-2015/12/14 新增：可选 -->
+    <input type="hidden" name="spid" value="" id="h_spid"/>
+    <!-- Sp编号，唯一标识SP的编号 -->
+    <input type="hidden" name="devType" value="" id="h_devType"/>
+    <!-- 订购参数：设备类型： 1 智能卡号 ,订购参数：设备类型： 见附录3.2.2-->
+    <input type="hidden" name="devNo" value="" id="h_devNo"/>
+    <!-- 订购参数：设备编号：智能卡、机顶盒的逻辑号码，其他硬件设备的序列号。智能卡号 ,订购参数：设备编号：智能卡、机顶盒的逻辑号码，其他硬件设备的序列号。智能卡号-->
+    <input type="hidden" name="serviceid" value="" id="h_serviceid"/>
+    <!-- 订购参数：一级业务产品编码 -->
+    <input type="hidden" name="resultCode" value="" id="h_resultCode"/>
+    <!-- 登录后，页面转向的地址;返回数据 , 0   验证成功, 非0 验证失败-->
+    <input type="hidden" name="retData" value="" id ="h_retData">
+    <!-- 业务调用参数，调用后保证原样返回。可以为空（加密）等等； 业务调用参数，调用后保证原样返回。可以为空（加密）等等；-->
+    <!-- <input type="submit"  value="submit"/>-->
+</form>
+</body>
+</html>

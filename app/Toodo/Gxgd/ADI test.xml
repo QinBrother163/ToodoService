@@ -1,0 +1,84 @@
+<result state="0" new_state="45"
+        reason="&#x6E38;&#x5BA2;&#x514D;&#x8D39;&#x89C6;&#x9891;&#xFF0C;&#x9274;&#x6743;&#x901A;&#x8FC7;" order_url="">
+    <video id="596d586931abd94dcf06f49ac9c834f4" cp_id="test" is_support_ncl="0">
+        <index id="cbe9c554230ddadf5d217c0f6b14add0" index_num="0">
+            <media id="a81d97a07ddd8c733223c197d710f7b3"
+                   url="rtsp://10.1.15.44:554/MOVE7820170718000018.ts^^^?&amp;startTime=&amp;endTime=&amp;areaCode=&amp;npv=gx_starcor&amp;userId=&amp;productId=&amp;id=MOVE7820170718000018&amp;provider=coship&amp;cms=V1596d95ac2fa579f1584133d78dd43cc4&amp;rdi="
+                   url_backup="" filetype="ts" quality="hd" begin_play_time="" play_time_len="0" ts_limit_min=""
+                   ts_default_pos="" dimensions="0" file_id="MOVE7820170718000018" import_source="test"
+                   original_id="MOVE7820170718000018" is_video=""/>
+            <metadata/>
+        </index>
+    </video>
+    <drm_list/>
+    <arg_list>
+        <client_ip>10.0.4.108</client_ip>
+        <is_support_preview>0</is_support_preview>
+        <preview_time>0</preview_time>
+        <preview_infos></preview_infos>
+        <preview_free_index></preview_free_index>
+        <is_support_coupon>0</is_support_coupon>
+        <coupon_type_ids></coupon_type_ids>
+        <coupon_info>[]</coupon_info>
+        <drm_encrypt_solution></drm_encrypt_solution>
+        <drm_flag>0</drm_flag>
+        <webtoken></webtoken>
+        <isothercdn></isothercdn>
+    </arg_list>
+</result>
+<result state="0" new_state="45"
+        reason="&#x6E38;&#x5BA2;&#x514D;&#x8D39;&#x89C6;&#x9891;&#xFF0C;&#x9274;&#x6743;&#x901A;&#x8FC7;" order_url="">
+<video id="596d586931abd94dcf06f49ac9c834f4" cp_id="test" is_support_ncl="0">
+    <index id="cbe9c554230ddadf5d217c0f6b14add0" index_num="0">
+        <media id="a81d97a07ddd8c733223c197d710f7b3"
+               url="rtsp://10.1.15.44:554/MOVE7820170718000018.ts^^^?&amp;startTime=&amp;endTime=&amp;areaCode=&amp;npv=gx_starcor&amp;userId=&amp;productId=&amp;id=MOVE7820170718000018&amp;provider=coship&amp;cms=V1596dced5a3da1e5af737823c0983ef1d&amp;rdi="
+               url_backup="" filetype="ts" quality="hd" begin_play_time="" play_time_len="0" ts_limit_min=""
+               ts_default_pos="" dimensions="0" file_id="MOVE7820170718000018" import_source="test"
+               original_id="MOVE7820170718000018" is_video=""/>
+        <metadata/>
+    </index>
+</video>
+<drm_list/>
+<arg_list>
+    <client_ip>10.0.4.108</client_ip>
+    <is_support_preview>0</is_support_preview>
+    <preview_time>0</preview_time>
+    <preview_infos></preview_infos>
+    <preview_free_index></preview_free_index>
+    <is_support_coupon>0</is_support_coupon>
+    <coupon_type_ids></coupon_type_ids>
+    <coupon_info>[]</coupon_info>
+    <drm_encrypt_solution></drm_encrypt_solution>
+    <drm_flag>0</drm_flag>
+    <webtoken></webtoken>
+    <isothercdn></isothercdn>
+</arg_list>
+</result>
+<result state="0" new_state="45"
+        reason="&#x6E38;&#x5BA2;&#x514D;&#x8D39;&#x89C6;&#x9891;&#xFF0C;&#x9274;&#x6743;&#x901A;&#x8FC7;" order_url="">
+<video id="596d586939f4475b8e2fa4519b19d229" cp_id="test" is_support_ncl="0">
+    <index id="0e2690e9ef73f11712f2a3e37f5824da" index_num="0">
+        <media id="ffdf21a00c2cb95121f0364971bcc013"
+               url="rtsp://10.1.15.44:554/MOVE8020170718000012.ts^^^?&amp;startTime=&amp;endTime=&amp;areaCode=&amp;npv=gx_starcor&amp;userId=&amp;productId=&amp;id=MOVE8020170718000012&amp;provider=coship&amp;cms=V1596de7cb1f84b12a1a874912f16ebde8&amp;rdi="
+               url_backup="" filetype="ts" quality="hd" begin_play_time="" play_time_len="0" ts_limit_min=""
+               ts_default_pos="" dimensions="0" file_id="MOVE8020170718000012" import_source="test"
+               original_id="MOVE8020170718000012" is_video=""/>
+        <metadata/>
+    </index>
+</video>
+<drm_list/>
+<arg_list>
+    <client_ip>10.0.4.108</client_ip>
+    <is_support_preview>0</is_support_preview>
+    <preview_time>0</preview_time>
+    <preview_infos></preview_infos>
+    <preview_free_index></preview_free_index>
+    <is_support_coupon>0</is_support_coupon>
+    <coupon_type_ids></coupon_type_ids>
+    <coupon_info>[]</coupon_info>
+    <drm_encrypt_solution></drm_encrypt_solution>
+    <drm_flag>0</drm_flag>
+    <webtoken></webtoken>
+    <isothercdn></isothercdn>
+</arg_list>
+</result>

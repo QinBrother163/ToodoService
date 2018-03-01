@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>双动科技-订购结果</title>
+    <style type="text/css">
+        body {
+            /*background: url(效果图/效果图.订单.png) no-repeat;*/
+            background: url(img/hnyx/bg.png) no-repeat;
+            width: 1280px;
+            height: 720px;
+            margin: 0;
+        }
+
+        .result {
+            position: absolute;
+            left: 408px;
+            top: 246px;
+        }
+
+        .result-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 112px;
+            height: 112px;
+        }
+
+        .result-title {
+            position: absolute;
+            left: 140px;
+            top: -4px;
+            width: 200px;
+            font-size: 26px;
+        }
+
+        .result-text {
+            position: absolute;
+            left: 140px;
+            top: 45px;
+            width: 400px;
+            color: #ffffff;
+            font-size: 21px;
+            line-height: 28px;
+        }
+
+        .result-btn {
+            position: absolute;
+            top: 205px;
+            width: 181px;
+            height: 58px;
+        }
+
+        #result-btn0 {
+            left: -190px;
+            background: url(img/hnyx/btn0.png) no-repeat;
+        }
+
+        #result-btn1 {
+            left: 190px;
+            background: url(img/hnyx/btn1.png) no-repeat;
+        }
+
+        .ali-bg {
+            position: absolute;
+            left: 99px;
+            top: 112px;
+            width: 1098px;
+            height: 519px;
+            background: url(img/hnyx/alipay.png);
+        }
+
+        .ali-text-amount {
+            position: absolute;
+            left: 659px;
+            top: 67px;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .ali-qr-img {
+            position: absolute;
+            left: 422px;
+            top: 172px;
+            width: 260px;
+            height: 260px;
+            background: #D2691E;
+        }
+
+        .ali-text {
+            position: absolute;
+            left: 32px;
+            top: 16px;
+            width: 288px;
+            height: 256px;
+
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .ali-text-title {
+            color: #ffe400;
+            font-size: 24px;
+            text-align: center;
+            line-height: 64px;
+        }
+
+        .ali-biz {
+            position: absolute;
+            left: 26px;
+            top: 365px;
+            width: 288px;
+            height: 128px;
+
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        .btn-bg {
+            position: absolute;
+            width: 200px;
+            height: 52px;
+            background: #11fbff;
+        }
+
+        .btn-bg-focus {
+            position: absolute;
+            width: 200px;
+            height: 52px;
+            background: #70ff78;
+            border: #ff2400 4px solid;
+        }
+
+        .btn-text {
+            text-align: center;
+            color: #000000;
+            font-size: 24px;
+            line-height: 52px;
+        }
+
+        #btn0 {
+            left: -45px;
+            top: 266px;
+        }
+
+        #btn1 {
+            left: 334px;
+            top: 266px;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="result">-->
+<!--<div class="result-icon" style="background: url(img/hnyx/icon_0.png);"></div>-->
+<!--<div class="result-title" style="color: #60ff00;">订购成功。</div>-->
+<!--<div class="result-text">-->
+<!--<div style="font-weight: bold">支付凭证</div>-->
+<!--<div style="position: absolute; top: 37px;">交易号：xxxxxxxxx</div>-->
+<!--<div style="position: absolute; top: 76px;">商家订单号：xxxxxxx</div>-->
+<!--<div style="position: absolute; top: 115px;">交易金额：999元</div>-->
+<!--<div style="position: absolute; top: 154px;">交易日期：2017年8月12日</div>-->
+<!--</div>-->
+
+<!--<div id="btn0" class="btn-bg-focus">-->
+<!--<div class="btn-text">快递地址</div>-->
+<!--</div>-->
+<!--<div id="btn1" class="btn-bg">-->
+<!--<div class="btn-text">返回</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="result">-->
+<!--<div class="result-icon" style="background: url(img/hnyx/icon_1.png);"></div>-->
+<!--<div class="result-title" style="color: #ffd800;font-size: 26px">余额不足！</div>-->
+<!--<div class="result-text">-->
+<!--<div style="position: absolute; top: 0;">可以充值后，再尝试订购产品。</div>-->
+<!--<div id="result-btn0" class="result-btn"></div>-->
+<!--<div id="result-btn1" class="result-btn"></div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="result">-->
+<!--<div class="result-icon" style="background: url(img/hnyx/icon_2.png);"></div>-->
+<!--<div class="result-title" style="color: #ff2400;font-size: 26px">订购失败！</div>-->
+<!--<div class="result-text">-->
+<!--<div style="position: absolute; top: 0;">抱歉，此产品包只能在营业厅办理！</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="ali-bg">
+    <div class="ali-text-amount">所需金额：<span style="font-size: 28px;">19元</span></div>
+    <div class="ali-qr-img"></div>
+    <div class="ali-text">
+        <div class="ali-text-title">钻石套餐</div>
+        <div>
+            * 含体感手柄+运动套装 <br/>
+            * 赠送12个月体感游戏包月 <br/>
+            * <span style="color: #FF1493;font-weight: 400;">钜惠249元</span> <span style="color: #ADFF2F">免邮到家</span>
+        </div>
+
+        <div class="ali-text-title">体感热舞包年</div>
+        <div>
+            * 畅玩海量舞曲12个月 <br/>
+            * 现价99元 <i style="color: #FF0000;font-size: 16px"><s>原价228元</s></i>
+        </div>
+
+        <div class="ali-text-title">遥控游戏包月</div>
+        <div>
+            * 海量游戏畅玩30天 19元<br/>
+        </div>
+    </div>
+    <div class="ali-biz">
+        客服电话：400-160-0891<br/>
+        客服邮箱：toodo@toodo.com.cn<br/>
+        客服时间：周一至周五 09:30-18:00<br/>
+        双动官网：toodo.com.cn
+    </div>
+</div>
+
+</body>
+</html>

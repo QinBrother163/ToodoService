@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://sp.fsdp.zte.com.cn"
+                  xmlns:tns="http://sp.fsdp.zte.com.cn"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+        <schema targetNamespace="http://sp.fsdp.zte.com.cn" xmlns="http://www.w3.org/2001/XMLSchema"
+                elementFormDefault="qualified">
+            <complexType name="commonRes">
+                <sequence>
+                    <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    <element name="servID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    <element name="resultCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    <element name="resultDesc" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="servInfoType">
+                <sequence>
+                    <element name="custid" minOccurs="0" type="xsd:string"/>
+                    <element name="servid" minOccurs="0" type="xsd:string"/>
+                    <element name="addr" minOccurs="0" type="xsd:string"/>
+                    <element name="servstatus" minOccurs="0" type="xsd:string"/>
+                    <element name="stoplock" minOccurs="0" type="xsd:int"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="userInfoType">
+                <sequence>
+                    <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    <element name="resultCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    <element name="custid" minOccurs="1" type="xsd:string"/>
+                    <element name="servID" minOccurs="1" type="xsd:string"/>
+                    <element name="servstatus" minOccurs="1" type="xsd:string"/>
+                    <element name="stoplock" minOccurs="0" type="xsd:string"/>
+                    <element name="userName" minOccurs="1" type="xsd:string"/>
+                    <element name="devNO" minOccurs="1" type="xsd:string"/>
+                    <element name="catvID" minOccurs="1" type="xsd:string"/>
+                    <element name="areaid" minOccurs="1" type="xsd:string"/>
+                    <element name="branchno" minOccurs="1" type="xsd:string"/>
+                    <element name="custtype" minOccurs="1" type="xsd:string"/>
+                    <element name="isinarr" minOccurs="1" type="xsd:string"/>
+                    <element name="resultDesc" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+
+            <element name="orderRelationSyncReq">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="opType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="customID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="catvID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="spID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="serviceID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="feeType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="fee" minOccurs="1" maxOccurs="1" type="xsd:double"/>
+                        <element name="originalFee" minOccurs="0" maxOccurs="1" type="xsd:double"/>
+                        <element name="amount" minOccurs="0" maxOccurs="1" type="xsd:int"/>
+                        <element name="effectiveDate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="expiryDate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="servID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="deptid" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="operateid" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="citycode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="orderRelationSyncResp">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="servID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultDesc" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="orderRelationReq">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="opType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="customID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="spID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="serviceID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="unit" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="count" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="catvID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="effectiveDate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="expiryDate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="CARegionCode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="orderRelationResp">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultDesc" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="orderID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="orderType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="feeName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="sums" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="needCnfm" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="orderRelationAffirmReq">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="orderID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="payWay" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="bankAccNO" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="payReqID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="payCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="orderRelationAffirmResp">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="servID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultDesc" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="orderRelationLv2Req">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="opType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="catvID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="spID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="serviceID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="effectiveDate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="expiryDate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="CARegionCode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="orderRelationLv2Resp">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="servID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultDesc" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="orderID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="needCnfm" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="payAuthReq">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="timeStamp" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devType" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="catvID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="spID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="serviceID" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="payType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="fixedFee" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="redirectURL" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="noticeAction" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="payBack" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="CARegionCode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="payAuthResp">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="servID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="resultDesc" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="orderID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        <element name="needCnfm" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="queryServInfoReq">
+                <complexType>
+                    <sequence>
+                        <element name="keywordtype" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="quekeyword" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="queryServInfoResp">
+                <complexType>
+                    <sequence>
+                        <element name="resultInfo" minOccurs="0" maxOccurs="unbounded" type="tns:servInfoType"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="queryUserInfoReq">
+                <complexType>
+                    <sequence>
+                        <element name="streamingNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="timeStamp" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="devNO" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                        <element name="CARegionCode" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="queryUserInfoResp">
+                <complexType>
+                    <sequence>
+                        <element name="resultInfo" minOccurs="0" maxOccurs="unbounded" type="tns:userInfoType"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+
+        </schema>
+    </wsdl:types>
+
+    <wsdl:message name="orderRelationSyncRequest">
+        <wsdl:part name="orderRelationSyncReq" element="tns:orderRelationSyncReq"/>
+    </wsdl:message>
+    <wsdl:message name="orderRelationSyncResponse">
+        <wsdl:part name="orderRelationSyncResp" element="tns:orderRelationSyncResp"/>
+    </wsdl:message>
+
+    <wsdl:message name="orderRelationRequest">
+        <wsdl:part name="orderRelationReq" element="tns:orderRelationReq"/>
+    </wsdl:message>
+    <wsdl:message name="orderRelationResponse">
+        <wsdl:part name="orderRelationResp" element="tns:orderRelationResp"/>
+    </wsdl:message>
+
+    <wsdl:message name="orderRelationAffirmRequest">
+        <wsdl:part name="orderRelationAffirmReq" element="tns:orderRelationAffirmReq"/>
+    </wsdl:message>
+    <wsdl:message name="orderRelationAffirmResponse">
+        <wsdl:part name="orderRelationAffirmResp" element="tns:orderRelationAffirmResp"/>
+    </wsdl:message>
+
+    <wsdl:message name="orderRelationLv2Request">
+        <wsdl:part name="orderRelationLv2Req" element="tns:orderRelationLv2Req"/>
+    </wsdl:message>
+    <wsdl:message name="orderRelationLv2Response">
+        <wsdl:part name="orderRelationLv2Resp" element="tns:orderRelationLv2Resp"/>
+    </wsdl:message>
+
+    <wsdl:message name="payAuthRequest">
+        <wsdl:part name="payAuthReq" element="tns:payAuthReq"/>
+    </wsdl:message>
+    <wsdl:message name="payAuthResponse">
+        <wsdl:part name="payAuthResp" element="tns:payAuthResp"/>
+    </wsdl:message>
+
+    <wsdl:message name="queryServInfoRequest">
+        <wsdl:part name="pqueryServInfoReq" element="tns:queryServInfoReq"/>
+    </wsdl:message>
+    <wsdl:message name="queryServInfoResponse">
+        <wsdl:part name="queryServInfoResp" element="tns:queryServInfoResp"/>
+    </wsdl:message>
+
+    <wsdl:message name="queryUserInfoRequest">
+        <wsdl:part name="queryUserInfoReq" element="tns:queryUserInfoReq"/>
+    </wsdl:message>
+    <wsdl:message name="queryUserInfoResponse">
+        <wsdl:part name="queryUserInfoResp" element="tns:queryUserInfoResp"/>
+    </wsdl:message>
+
+    <wsdl:portType name="SP2FSDP">
+        <wsdl:operation name="orderRelation">
+            <wsdl:input name="orderRelationRequest" message="tns:orderRelationRequest"/>
+            <wsdl:output name="orderRelationResponse" message="tns:orderRelationResponse"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="orderRelationAffirm">
+            <wsdl:input name="orderRelationAffirmRequest" message="tns:orderRelationAffirmRequest"/>
+            <wsdl:output name="orderRelationAffirmResponse" message="tns:orderRelationAffirmResponse"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="orderRelationLv2">
+            <wsdl:input name="orderRelationLv2Request" message="tns:orderRelationLv2Request"/>
+            <wsdl:output name="orderRelationLv2Response" message="tns:orderRelationLv2Response"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="payAuth">
+            <wsdl:input name="payAuthRequest" message="tns:payAuthRequest"/>
+            <wsdl:output name="payAuthResponse" message="tns:payAuthResponse"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="queryServInfo">
+            <wsdl:input name="queryServInfoRequest" message="tns:queryServInfoRequest"/>
+            <wsdl:output name="queryServInfoResponse" message="tns:queryServInfoResponse"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="queryUserInfo">
+            <wsdl:input name="queryUserInfoRequest" message="tns:queryUserInfoRequest"/>
+            <wsdl:output name="queryUserInfoResponse" message="tns:queryUserInfoResponse"/>
+        </wsdl:operation>
+
+    </wsdl:portType>
+
+    <wsdl:portType name="FSDP2SP">
+        <wsdl:operation name="orderRelationSync">
+            <wsdl:input name="orderRelationSyncRequest" message="tns:orderRelationSyncRequest"/>
+            <wsdl:output name="orderRelationSyncResponse" message="tns:orderRelationSyncResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="SP2FSDPBinding" type="tns:SP2FSDP">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="orderRelation">
+            <soap:operation/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="orderRelationAffirm">
+            <soap:operation/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="orderRelationLv2">
+            <soap:operation/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="payAuth">
+            <soap:operation/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryServInfo">
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryUserInfo">
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="FSDP2SPBinding" type="tns:FSDP2SP">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="orderRelationSync">
+            <soap:operation/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="SPService">
+        <wsdl:port name="SP2FSDP" binding="tns:SP2FSDPBinding">
+            <!--<soap:address location="http://103.27.24.36:9007/services/sp"/>-->
+            <!--<soap:address location="http://103.27.24.122:9007/services/sp"/>-->
+            <!--
+              正式环境
+              饶佐伦 17:25:51
+              童锁：http://172.16.145.197:8080/sdpportal/childLockAction_childlock.action
+              反向订购：http://172.16.145.199:9007/services/sp
+            -->
+            <soap:address location="http://172.16.145.199:9007/services/sp"/>
+        </wsdl:port>
+        <wsdl:port name="FSDP2SP" binding="tns:FSDP2SPBinding">
+            <soap:address location="http://127.0.0.1:8000/api/fsdp"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
